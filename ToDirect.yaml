@@ -1,0 +1,30 @@
+# NAME: ToDirect
+# UPDATED: 2025-08-24
+# DOMAIN: 20
+# DOMAIN-KEYWORD: 1
+# DOMAIN-SUFFIX: 26
+# IP-ASN: 2
+# IP-CIDR: 2
+# TOTAL: 51
+payload:
+  - DOMAIN-SUFFIX,algolia.net
+  - DOMAIN-SUFFIX,api.microsoftapp.net
+  - IP-CIDR,24.199.123.28/32
+  - IP-CIDR,64.23.132.171/32
+  - IP-ASN,14061
+  - IP-ASN,20473
+
+
+
+  relay.walletconnect.org
+api.web3gate.io
+43.175.103.3:3000
+
+
+app-spot-ws.zhaqby.com
+snssdk.gatedata.org
+push-api.appchannel.link
+
+social-cdn.gposts.net
+web3-backup.gateio.services
+app-img-aws.gateimage.com
