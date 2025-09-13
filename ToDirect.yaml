@@ -16,6 +16,9 @@ payload:
   - DOMAIN,web3-backup.gateio.services
   - DOMAIN,app-img-aws.gateimage.com
   - DOMAIN,api.onesignal.com
+  - DOMAIN,binancencnt.com
+  - DOMAIN,binance.info
+  - DOMAIN,binance.com
   - DOMAIN-SUFFIX,okx.com
   - IP-CIDR,43.175.103.3/32
 
