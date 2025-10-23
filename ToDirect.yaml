@@ -26,6 +26,15 @@ payload:
   - IP-CIDR,120.24.233.110/32
   - IP-CIDR,54.150.106.1/32
   - IP-CIDR,52.68.117.1/32
+  - DOMAIN-SUFFIX,web3gate.cc
+  - DOMAIN-SUFFIX,gateio.im
+  - DOMAIN-SUFFIX,gateweb3.io
+  - DOMAIN-SUFFIX,gateio.im
+  - DOMAIN-SUFFIX,gate.com
+
+
+
+
 
 
 
