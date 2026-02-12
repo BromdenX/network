@@ -1,15 +1,3 @@
----
-layout:     post
-title:      BuildingYourBridge
-subtitle:   BuildingYourBridge
-date:       2026-02-12
-author:     BromdenX
-header-img: img/post-bg-cook.jpg
-catalog: true
-tags:
-    - Blig
----
-
 
 > To adong: Building your bridge to the free web. — **BromdenX**
 
