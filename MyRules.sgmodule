@@ -1,5 +1,5 @@
-#!name=我的专属模块
-#!desc=自定义规则与分流更新
+#!name=MyRules
+#!desc=Custom Rules and Split-Routing Updates
 #!category=自定义
 
 [Rule]
