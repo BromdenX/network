@@ -9,8 +9,10 @@ DOMAIN-SUFFIX,google.com,PROXY
 
 # 需要走直连的规则
 DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+DOMAIN-SUFFIX,bing.com,DIRECT
+DOMAIN,time.apple.com,DIRECT
 DOMAIN-SUFFIX,snssdk.com,DIRECT
 DOMAIN-SUFFIX,bytegecko.com,DIRECT
 DOMAIN-SUFFIX,digicert.com,DIRECT
 DOMAIN-SUFFIX,mail.me.com,DIRECT
-
+DOMAIN-SUFFIX,icloud-content.com,DIRECT
