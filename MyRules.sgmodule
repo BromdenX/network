@@ -1,0 +1,16 @@
+#!name=我的专属模块
+#!desc=自定义规则与分流更新
+#!category=自定义
+
+[Rule]
+# 需要走VPS的规则
+# 语法：类型,域名/IP,策略
+DOMAIN-SUFFIX,google.com,PROXY
+
+# 需要走直连的规则
+DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+DOMAIN-SUFFIX,snssdk.com,DIRECT
+DOMAIN-SUFFIX,bytegecko.com,DIRECT
+DOMAIN-SUFFIX,digicert.com,DIRECT
+DOMAIN-SUFFIX,mail.me.com,DIRECT
+
