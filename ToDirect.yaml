@@ -35,6 +35,7 @@ payload:
   - DOMAIN-SUFFIX,digicert.com
   - DOMAIN-SUFFIX,bytegecko.com
   - DOMAIN-SUFFIX,snssdk.com
+  - DOMAIN-SUFFIX,hdslb.com
 
 
 
