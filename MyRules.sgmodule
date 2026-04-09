@@ -17,3 +17,8 @@ DOMAIN-SUFFIX,digicert.com,DIRECT
 DOMAIN-SUFFIX,mail.me.com,DIRECT
 DOMAIN-SUFFIX,icloud-content.com,DIRECT
 DOMAIN-SUFFIX,apple-mapkit.com,DIRECT
+
+DOMAIN-SUFFIX,meituan.com,DIRECT
+DOMAIN-SUFFIX,d.meituan.net,DIRECT
+DOMAIN-SUFFIX,apimobile.meituan.com,DIRECT
+DOMAIN-SUFFIX,meituan.net,DIRECT
