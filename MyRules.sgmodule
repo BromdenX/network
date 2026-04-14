@@ -8,6 +8,43 @@
 DOMAIN-SUFFIX,google.com,PROXY
 
 # 需要走直连的规则
+# --- 微信与腾讯服务补全 (日志高频出现) ---
+DOMAIN-SUFFIX,wechat.com,DIRECT
+DOMAIN-SUFFIX,qpic.cn,DIRECT
+DOMAIN-SUFFIX,weixinbridge.com,DIRECT
+DOMAIN-SUFFIX,wxs.qq.com,DIRECT
+DOMAIN-SUFFIX,wechatpay.cn,DIRECT
+DOMAIN-SUFFIX,servicewechat.com,DIRECT
+DOMAIN-SUFFIX,video.qq.com,DIRECT
+
+# --- Bilibili 视频与资源流 (解决加载卡顿) ---
+DOMAIN-SUFFIX,biliapi.net,DIRECT
+DOMAIN-SUFFIX,bilivideo.com,DIRECT
+DOMAIN-SUFFIX,bilivideo.cn,DIRECT
+DOMAIN-SUFFIX,hdslb.com,DIRECT
+
+# --- 字节跳动与豆包 AI (针对你的使用习惯) ---
+DOMAIN-SUFFIX,doubao.com,DIRECT
+DOMAIN-SUFFIX,bytegecko.com,DIRECT
+DOMAIN-SUFFIX,snssdk.com,DIRECT
+DOMAIN-SUFFIX,byteimg.com,DIRECT
+
+# --- 办公与系统工具 (提升同步速度) ---
+DOMAIN-SUFFIX,feishu.cn,DIRECT
+DOMAIN-SUFFIX,larksuite.com,DIRECT
+DOMAIN-SUFFIX,autonavi.com,DIRECT
+DOMAIN-SUFFIX,tesla.cn,DIRECT
+
+# --- 苹果与证书校验 (基于你的设备环境) ---
+DOMAIN-SUFFIX,apple.com.cn,DIRECT
+DOMAIN-SUFFIX,digicert.com,DIRECT
+DOMAIN-SUFFIX,weatherkit.apple.com,DIRECT
+
+# --- 常见广告与追踪屏蔽 (基于日志高频 Reject 项) ---
+DOMAIN-SUFFIX,appsflyer.com,REJECT
+DOMAIN-SUFFIX,zijieapi.com,REJECT
+
+# -------------------------------
 DOMAIN-SUFFIX,tencent.com,DIRECT
 DOMAIN-SUFFIX,servicewechat.com,DIRECT
 DOMAIN-SUFFIX,bilibili.com,DIRECT
