@@ -57,9 +57,9 @@ CIDR 会生成到 Shadowrocket 和 OpenClash。AutoProxy 域名列表不生成 C
 - 直连、代理 CIDR 网段重叠
 - 特殊配置包含未知字段或不支持的格式
 
-父域与子域需要不同策略时，使用 `direct_exact` 或 `proxy_exact`。精确规则会放在后缀规则之前。例如 `bing.com` 直连，但 `sydney.bing.com` 代理。
+父域与子域需要不同策略时，使用 `direct_exact` 或 `proxy_exact`。精确规则会放在后缀规则之前。例如 `apple.com` 直连，但 `push.apple.com` 代理。
 
-OpenClash 的直连、代理规则来自两个独立 provider，跨文件优先级由主配置决定。现有的 Apple、Bing、GPosts 和 Binance 差异已经通过 `openclash_*` 兼容字段显式处理，生成器不会允许新的跨 provider 冲突悄悄进入文件。
+OpenClash 的直连、代理规则来自两个独立 provider，主配置必须把 `ToProxy` 放在 `ToDirect` 前。生成器允许 `proxy_exact` 中的精确代理域名覆盖 `Raw_Direct.txt` 中的直连父域；普通直连、代理后缀之间的重叠仍会报错。
 
 ## 本地验证
 

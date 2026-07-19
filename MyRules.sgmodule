@@ -29,7 +29,6 @@ DOMAIN,api.web3gate.io,DIRECT
 DOMAIN,app-img-aws.gateimage.com,DIRECT
 DOMAIN,app-spot-ws.zhaqby.com,DIRECT
 DOMAIN,push-api.appchannel.link,DIRECT
-DOMAIN,push.apple.com,DIRECT
 DOMAIN,relay.walletconnect.org,DIRECT
 DOMAIN,snssdk.gatedata.org,DIRECT
 DOMAIN,social-cdn.gposts.net,DIRECT
@@ -40,6 +39,7 @@ DOMAIN,api.githubcopilot.com,PROXY
 DOMAIN,api.groq.com,PROXY
 DOMAIN,api.together.xyz,PROXY
 DOMAIN,console.groq.com,PROXY
+DOMAIN,push.apple.com,PROXY
 DOMAIN,sydney.bing.com,PROXY
 
 # Keyword proxy rules

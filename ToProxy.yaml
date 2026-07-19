@@ -11,6 +11,7 @@ payload:
   - DOMAIN,api.groq.com
   - DOMAIN,api.together.xyz
   - DOMAIN,console.groq.com
+  - DOMAIN,push.apple.com
   - DOMAIN,sydney.bing.com
   - DOMAIN-KEYWORD,anthropic
   - DOMAIN-KEYWORD,claude

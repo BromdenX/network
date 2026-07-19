@@ -10,7 +10,6 @@ payload:
   - DOMAIN,app-img-aws.gateimage.com
   - DOMAIN,app-spot-ws.zhaqby.com
   - DOMAIN,push-api.appchannel.link
-  - DOMAIN,push.apple.com
   - DOMAIN,relay.walletconnect.org
   - DOMAIN,snssdk.gatedata.org
   - DOMAIN,social-cdn.gposts.net
@@ -22,6 +21,7 @@ payload:
   - DOMAIN-SUFFIX,amap.com
   - DOMAIN-SUFFIX,apple-mapkit.com
   - DOMAIN-SUFFIX,apple.cn
+  - DOMAIN-SUFFIX,apple.com
   - DOMAIN-SUFFIX,apple.com.cn
   - DOMAIN-SUFFIX,autonavi.com
   - DOMAIN-SUFFIX,biliapi.net

@@ -1,4 +1,3 @@
-push.apple.com
 aerodrome.finance
 ai.azure.com
 ai.google
