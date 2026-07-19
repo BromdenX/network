@@ -60,13 +60,14 @@ class GenerateRulesTests(unittest.TestCase):
         for specific, parent in cases:
             self.assertLess(shadowrocket.index(specific), shadowrocket.index(parent))
 
-    def test_openclash_does_not_depend_on_provider_order(self):
+    def test_openclash_exact_proxy_exception_uses_provider_order(self):
         direct = self.outputs[ROOT / "ToDirect.yaml"]
         proxy = self.outputs[ROOT / "ToProxy.yaml"]
-        self.assertNotIn("DOMAIN-SUFFIX,apple.com\n", direct)
+        self.assertIn("DOMAIN-SUFFIX,apple.com\n", direct)
         self.assertNotIn("DOMAIN-SUFFIX,bing.com\n", direct)
         self.assertNotIn("DOMAIN-SUFFIX,gposts.net\n", proxy)
-        self.assertIn("DOMAIN,push.apple.com\n", direct)
+        self.assertNotIn("DOMAIN,push.apple.com\n", direct)
+        self.assertIn("DOMAIN,push.apple.com\n", proxy)
         self.assertIn("DOMAIN,amp-api-edge.apps.apple.com\n", proxy)
         self.assertIn("DOMAIN,sydney.bing.com\n", proxy)
 
@@ -77,10 +78,15 @@ class GenerateRulesTests(unittest.TestCase):
                 ["example.com"], ["api.example.com"], config
             )
 
-    def test_openclash_cross_provider_conflict_is_rejected(self):
+    def test_openclash_exact_proxy_exception_is_allowed(self):
+        generate_rules.validate_openclash_conflicts(
+            [], ["example.com"], ["api.example.com"], [], []
+        )
+
+    def test_openclash_suffix_conflict_is_rejected(self):
         with self.assertRaises(generate_rules.RulesError):
             generate_rules.validate_openclash_conflicts(
-                [], ["example.com"], ["api.example.com"], [], []
+                [], ["example.com"], [], ["api.example.com"], []
             )
 
 

@@ -162,22 +162,33 @@ def validate_openclash_conflicts(
     proxy_suffix: list[str],
     proxy_keyword: list[str],
 ) -> None:
-    """Forbid cross-provider matches because provider order is external."""
+    """Validate conflicts assuming ToProxy is loaded before ToDirect.
+
+    An exact proxy host may intentionally override a broader direct suffix.
+    Other cross-provider overlaps remain errors because they are ambiguous or
+    cannot be made safe by that provider order.
+    """
     conflicts: set[str] = set()
-    direct_domains = set(direct_exact) | set(direct_suffix)
-    proxy_domains = set(proxy_exact) | set(proxy_suffix)
-    for direct in direct_domains:
-        for proxy in proxy_domains:
+    for direct in direct_exact:
+        for proxy in proxy_suffix:
+            if is_suffix_match(direct, proxy):
+                conflicts.add(f"DIRECT exact {direct} <-> PROXY suffix {proxy}")
+
+    for direct in direct_suffix:
+        for proxy in proxy_suffix:
             if is_suffix_match(direct, proxy) or is_suffix_match(proxy, direct):
-                conflicts.add(f"DIRECT {direct} <-> PROXY {proxy}")
+                conflicts.add(f"DIRECT suffix {direct} <-> PROXY suffix {proxy}")
+
+    direct_domains = set(direct_exact) | set(direct_suffix)
+    for direct in direct_domains:
         for keyword in proxy_keyword:
             if keyword in direct:
                 conflicts.add(f"DIRECT {direct} <-> PROXY keyword {keyword}")
     if conflicts:
         detail = "\n  - ".join(sorted(conflicts))
         raise RulesError(
-            "OpenClash cross-provider conflicts found; add an explicit "
-            f"compatibility exclusion:\n  - {detail}"
+            "OpenClash cross-provider conflicts found. ToProxy-before-ToDirect "
+            f"only permits exact proxy exceptions inside direct suffixes:\n  - {detail}"
         )
 
 
