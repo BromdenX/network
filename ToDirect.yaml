@@ -1,11 +1,7 @@
 # NAME: ToDirect
-# UPDATED: 2025-08-24
-# DOMAIN: 20
-# DOMAIN-KEYWORD: 1
-# DOMAIN-SUFFIX: 26
-# IP-ASN: 2
-# IP-CIDR: 2
-# TOTAL: 51
+# DESC=OpenClash Rules
+# UPDATED: 2026-07-19 
+
 payload:
   - DOMAIN,relay.walletconnect.org
   - DOMAIN,api.web3gate.io
@@ -36,9 +32,3 @@ payload:
   - DOMAIN-SUFFIX,bytegecko.com
   - DOMAIN-SUFFIX,snssdk.com
   - DOMAIN-SUFFIX,hdslb.com
-
-
-
-
-
-
