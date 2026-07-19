@@ -8,7 +8,6 @@ direct_exact:
   - app-img-aws.gateimage.com
   - app-spot-ws.zhaqby.com
   - push-api.appchannel.link
-  - push.apple.com
   - relay.walletconnect.org
   - snssdk.gatedata.org
   - social-cdn.gposts.net
@@ -17,6 +16,7 @@ direct_exact:
 # Exact hosts that must use the proxy. These override broader direct suffixes.
 proxy_exact:
   - ai.google.dev
+  - push.apple.com
   - amp-api-edge.apps.apple.com
   - api.githubcopilot.com
   - api.groq.com
