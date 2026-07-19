@@ -1,0 +1,84 @@
+# This file intentionally uses a small, dependency-free YAML subset:
+# top-level list names followed by two-space-indented list items.
+
+# Exact hosts that must connect directly. These are emitted before suffix rules.
+direct_exact:
+  - api.onesignal.com
+  - api.web3gate.io
+  - app-img-aws.gateimage.com
+  - app-spot-ws.zhaqby.com
+  - push-api.appchannel.link
+  - push.apple.com
+  - relay.walletconnect.org
+  - snssdk.gatedata.org
+  - social-cdn.gposts.net
+  - web3-backup.gateio.services
+
+# Exact hosts that must use the proxy. These override broader direct suffixes.
+proxy_exact:
+  - ai.google.dev
+  - amp-api-edge.apps.apple.com
+  - api.githubcopilot.com
+  - api.groq.com
+  - api.together.xyz
+  - console.groq.com
+  - sydney.bing.com
+
+# Keyword matching is supported by Shadowrocket and OpenClash, not AutoProxy.
+proxy_keyword:
+  - anthropic
+  - claude
+  - openai
+
+# CIDR rules are emitted to Shadowrocket and OpenClash, not AutoProxy.
+direct_cidr:
+  - 35.77.148.188/32
+  - 43.175.103.3/32
+  - 52.68.117.1/32
+  - 54.150.106.1/32
+  - 120.24.233.110/32
+
+proxy_cidr:
+
+# REJECT is a Shadowrocket-only policy in this repository.
+reject_exact:
+
+reject_suffix:
+  - analytics-api.smzdm.com
+  - app-analytics-services.com
+  - appsflyer.com
+  - appsflyersdk.com
+  - audid-api.taobao.com
+  - braze.com
+  - collector.github.com
+  - datadoghq.com
+  - iadsdk.apple.com
+  - jpush.cn
+  - metrics.icloud.com
+  - mon.zijieapi.com
+  - snowflake.qq.com
+  - stocks-analytics-events.apple.com
+
+# Compatibility exceptions retained from the original client-specific files.
+# Binance stays proxied in ZeroOmega but direct in OpenClash. It is intentionally
+# omitted from MyRules.sgmodule because the previous Shadowrocket file had no rule.
+autoproxy_proxy_suffix:
+  - binance.com
+
+openclash_direct_suffix:
+  - binance.com
+
+# The original OpenClash list proxied this telemetry host while Shadowrocket
+# rejected its parent suffix. Keep that client-specific behavior explicit.
+openclash_proxy_suffix:
+  - browser-intake-us5-datadoghq.com
+
+# OpenClash loads direct and proxy providers separately, so cross-provider
+# exact-vs-parent precedence cannot be guaranteed here. These exclusions keep
+# the original client behavior deterministic instead of relying on provider order.
+openclash_direct_exclude_suffix:
+  - apple.com
+  - bing.com
+
+openclash_proxy_exclude_suffix:
+  - gposts.net
