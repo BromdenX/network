@@ -1,5 +1,6 @@
 reddit.com
 revenuecat.com
+ampproject.org
 z-lib.sk
 aerodrome.finance
 ai.azure.com
