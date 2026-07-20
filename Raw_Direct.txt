@@ -1,3 +1,6 @@
+wup.dobby.qq.com
+s3-yspre-inter.didistatic.com
+dataflow.biliapi.com
 feishucdn.com
 tfogc.com
 amap.com
