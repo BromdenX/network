@@ -34,6 +34,7 @@ payload:
   - DOMAIN-SUFFIX,bytegecko.com
   - DOMAIN-SUFFIX,byteimg.com
   - DOMAIN-SUFFIX,cdn-apple.com
+  - DOMAIN-SUFFIX,didistatic.com
   - DOMAIN-SUFFIX,digicert.com
   - DOMAIN-SUFFIX,doubao.com
   - DOMAIN-SUFFIX,feishu.cn
@@ -51,19 +52,23 @@ payload:
   - DOMAIN-SUFFIX,my-imcloud.com
   - DOMAIN-SUFFIX,mzstatic.com
   - DOMAIN-SUFFIX,okx.com
+  - DOMAIN-SUFFIX,pool.ntp.org
   - DOMAIN-SUFFIX,qcloud.com
   - DOMAIN-SUFFIX,qpic.cn
   - DOMAIN-SUFFIX,qq.com
+  - DOMAIN-SUFFIX,ruijie.com.cn
   - DOMAIN-SUFFIX,saasexch.com
   - DOMAIN-SUFFIX,servicewechat.com
   - DOMAIN-SUFFIX,snssdk.com
   - DOMAIN-SUFFIX,tencent.com
   - DOMAIN-SUFFIX,tesla.cn
+  - DOMAIN-SUFFIX,tfogc.com
   - DOMAIN-SUFFIX,web3gate.cc
   - DOMAIN-SUFFIX,wechat.com
   - DOMAIN-SUFFIX,wechatpay.cn
   - DOMAIN-SUFFIX,weixin.qq.com.cn
   - DOMAIN-SUFFIX,weixinbridge.com
+  - DOMAIN-SUFFIX,youku.com
   - IP-CIDR,120.24.233.110/32,no-resolve
   - IP-CIDR,35.77.148.188/32,no-resolve
   - IP-CIDR,43.175.103.3/32,no-resolve
