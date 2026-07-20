@@ -231,6 +231,7 @@ DOMAIN-SUFFIX,youtube-nocookie.com,PROXY
 DOMAIN-SUFFIX,youtube.com,PROXY
 DOMAIN-SUFFIX,yt.be,PROXY
 DOMAIN-SUFFIX,ytimg.com,PROXY
+DOMAIN-SUFFIX,z-lib.sk,PROXY
 DOMAIN-SUFFIX,z-library.sk,PROXY
 
 # CIDR rules
