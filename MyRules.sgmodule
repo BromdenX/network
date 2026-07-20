@@ -68,6 +68,7 @@ DOMAIN-SUFFIX,bing.com,DIRECT
 DOMAIN-SUFFIX,bytegecko.com,DIRECT
 DOMAIN-SUFFIX,byteimg.com,DIRECT
 DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+DOMAIN-SUFFIX,dataflow.biliapi.com,DIRECT
 DOMAIN-SUFFIX,didistatic.com,DIRECT
 DOMAIN-SUFFIX,digicert.com,DIRECT
 DOMAIN-SUFFIX,doubao.com,DIRECT
@@ -91,6 +92,7 @@ DOMAIN-SUFFIX,qcloud.com,DIRECT
 DOMAIN-SUFFIX,qpic.cn,DIRECT
 DOMAIN-SUFFIX,qq.com,DIRECT
 DOMAIN-SUFFIX,ruijie.com.cn,DIRECT
+DOMAIN-SUFFIX,s3-yspre-inter.didistatic.com,DIRECT
 DOMAIN-SUFFIX,saasexch.com,DIRECT
 DOMAIN-SUFFIX,servicewechat.com,DIRECT
 DOMAIN-SUFFIX,snssdk.com,DIRECT
@@ -102,6 +104,7 @@ DOMAIN-SUFFIX,wechat.com,DIRECT
 DOMAIN-SUFFIX,wechatpay.cn,DIRECT
 DOMAIN-SUFFIX,weixin.qq.com.cn,DIRECT
 DOMAIN-SUFFIX,weixinbridge.com,DIRECT
+DOMAIN-SUFFIX,wup.dobby.qq.com,DIRECT
 DOMAIN-SUFFIX,youku.com,DIRECT
 DOMAIN-SUFFIX,aerodrome.finance,PROXY
 DOMAIN-SUFFIX,ai.azure.com,PROXY
