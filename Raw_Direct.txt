@@ -1,4 +1,11 @@
 feishucdn.com
+tfogc.com
+amap.com
+youku.com
+didistatic.com
+ruijie.com.cn
+pool.ntp.org
+qcloud.com
 alibabacloud.com
 alipay.com
 alipayobjects.com
