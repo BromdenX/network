@@ -19,6 +19,7 @@ payload:
   - DOMAIN-SUFFIX,aerodrome.finance
   - DOMAIN-SUFFIX,ai.azure.com
   - DOMAIN-SUFFIX,ai.google
+  - DOMAIN-SUFFIX,ampproject.org
   - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,auth0.com
   - DOMAIN-SUFFIX,binpay.com
