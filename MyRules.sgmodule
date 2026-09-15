@@ -39,7 +39,6 @@ DOMAIN,api.githubcopilot.com,PROXY
 DOMAIN,api.groq.com,PROXY
 DOMAIN,api.together.xyz,PROXY
 DOMAIN,console.groq.com,PROXY
-DOMAIN,push.apple.com,PROXY
 DOMAIN,sydney.bing.com,PROXY
 
 # Keyword proxy rules
