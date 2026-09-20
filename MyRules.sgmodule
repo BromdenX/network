@@ -34,7 +34,6 @@ DOMAIN,snssdk.gatedata.org,DIRECT
 DOMAIN,social-cdn.gposts.net,DIRECT
 DOMAIN,web3-backup.gateio.services,DIRECT
 DOMAIN,ai.google.dev,PROXY
-DOMAIN,amp-api-edge.apps.apple.com,PROXY
 DOMAIN,api.githubcopilot.com,PROXY
 DOMAIN,api.groq.com,PROXY
 DOMAIN,api.together.xyz,PROXY
